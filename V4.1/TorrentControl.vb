@@ -2,9 +2,10 @@ Imports System.Net
 Imports System.Reflection
 
 'https://github.com/qbittorrent/qBittorrent/wiki/WebUI-API-(qBittorrent-4.1)#login
-' API 
+' API
 Public Class TorrentControl
     Public api As apiClass
+    Private WebUIVersion As String = "2.5.1"
 
     Public Class CookieAwareWebClient
         Inherits WebClient
@@ -659,6 +660,10 @@ Public Class TorrentControl
             Return v2.auth.ParseJSON(Value)
         End Function
     End Class
+
+    Public Function GetWebUIVersion() As String
+        Return WebUIVersion
+    End Function
 
     Public Sub New()
         api = New apiClass()
