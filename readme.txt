@@ -1,5 +1,5 @@
-This is a quick, easy to use wrapper for qBitorrent located at:
-https://github.com/Conan1996-2/qBitorrent-WebUI-API
+This is a quick, easy to use wrapper for qBittorrent located at:
+https://github.com/Conan1996-2/qBittorrent-WebUI-API
 
 
 The Code structure follows the API tree, so as example,
